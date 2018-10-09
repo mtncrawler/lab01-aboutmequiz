@@ -11,6 +11,7 @@ namespace lab01_aboutmetquiz
             Question2();
             Console.WriteLine($"The answer is {Question3()}!");
             Question4();
+            Question5();
         }
 
         static string Question1()
@@ -46,6 +47,7 @@ namespace lab01_aboutmetquiz
         {
             Console.WriteLine("True or false: I have lived in 5 states.");
             string answer3 = Console.ReadLine();
+
             if (Boolean.Parse(answer3))
             {
                 return true;
@@ -66,6 +68,23 @@ namespace lab01_aboutmetquiz
             } else
             {
                 Console.WriteLine("Wrong! I was born in October.");
+            }
+        }
+
+        static void Question5()
+        {
+            Console.WriteLine("If I could have any superpower would it be:");
+            Console.WriteLine("1. Fly like Superman");
+            Console.WriteLine("2. Breath underwater like Aquaman");
+            Console.WriteLine("3. Run fast like Flash");
+            Console.WriteLine("Select an answer 1 - 3.");
+            string answer5 = Console.ReadLine();
+            if( answer5 == "1")
+            {
+                Console.WriteLine("Correct! Fly like an eagle!");
+            } else
+            {
+                Console.WriteLine("Wrong! I want to fly like an eagle.");
             }
         }
     }
