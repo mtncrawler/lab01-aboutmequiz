@@ -7,4 +7,4 @@ To run the program:
 2. open project in visual studio
 3. start without debugging
 
-[About Me Quiz](assets/aboutmequiz)
+[About Me Quiz](assets/aboutmequiz.png)
