@@ -46,16 +46,30 @@ namespace lab01_aboutmetquiz
         static bool Question3()
         {
             Console.WriteLine("True or false: I have lived in 5 states.");
-            string answer3 = Console.ReadLine();
 
-            if (Boolean.Parse(answer3))
+            while (true)
             {
-                return true;
+                try
+                {
+                    string answer3 = Console.ReadLine();
+                    if (Boolean.Parse(answer3))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception: {0}. Please enter true or false.", e.Message);
+                    continue;
+                }
             }
-            else
-            {
-                return false;
-            }
+            
+
+            
         }
 
         static void Question4()
