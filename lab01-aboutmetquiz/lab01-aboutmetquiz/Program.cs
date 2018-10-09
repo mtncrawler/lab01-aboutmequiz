@@ -4,6 +4,7 @@ namespace lab01_aboutmetquiz
 {
     class Program
     {
+        //main method to call methods for 5 questions about me
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to my About Me Quiz!");
@@ -14,6 +15,7 @@ namespace lab01_aboutmetquiz
             Question5();
         }
 
+        //method to ask how many siblings I have then return a string
         static string Question1()
         {
             Console.WriteLine("How many siblings do I have?");
@@ -29,6 +31,7 @@ namespace lab01_aboutmetquiz
 
         }
 
+        //method to ask where in South America I want to visit then returns void type
         static void Question2()
         {
             Console.WriteLine("What area of South America do I want to visit?");
@@ -43,10 +46,12 @@ namespace lab01_aboutmetquiz
             }
         }
 
+        //method to ask bool question whether I have lived in 5 states then returns bool
         static bool Question3()
         {
             Console.WriteLine("True or false: I have lived in 5 states.");
 
+            //while loop with try/catch to ensure the user enters a valid bool, if not it will continue loop until valid response is received
             while (true)
             {
                 try
@@ -72,6 +77,7 @@ namespace lab01_aboutmetquiz
             
         }
 
+        //method to ask what month I was born then return void type
         static void Question4()
         {
             Console.WriteLine("What month was I born?");
@@ -85,6 +91,7 @@ namespace lab01_aboutmetquiz
             }
         }
 
+        //method to ask what superpower I want then returns void type
         static void Question5()
         {
             Console.WriteLine("If I could have any superpower would it be:");
